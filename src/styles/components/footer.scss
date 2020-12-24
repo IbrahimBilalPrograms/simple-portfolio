@@ -1,0 +1,10 @@
+.footer {
+    color: gray;
+    & hr {
+        border: 2px solid;
+    }
+    & p {
+        text-align: center;
+        font-family: Inter;
+    }
+}

@@ -1,0 +1,306 @@
+body, html{
+    height:100%;
+    margin:0;
+    // font-size:16px;
+    font-family:"Lato", sans-serif;
+    // font-weight:400;
+    // line-height:1.8em;
+    background: black;
+  }
+
+  .index {
+      &-screen1 {
+        position:relative;
+        background-image:url('../images/yokohama2200.jpg');
+        //filter: brightness(90%);
+        min-height:100vh;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        box-shadow: 0 0 100px 100px #111 inset;
+        &-text {
+            //position:absolute;
+            //top:50%;
+            width:50%;
+            height: 100vh;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color:#000;
+            font-size: 2rem;
+            font-weight: 200;
+            text-shadow: 3px 2px #111;
+            letter-spacing:8px;
+            &-border {
+                background-color:#111;
+                color:#fff;
+                padding:20px;
+            }
+            @media(max-width: 1000px) {
+              width: 75%;
+            }
+            @media(max-width: 800px) {
+              width: 85%;
+            }
+            @media(max-width: 700px) {
+              width: 95%;
+            }
+        }
+        @media(max-width:568px){
+            background-attachment:scroll; 
+        }
+      }
+      &-screen2 {
+        position:relative;
+        background-image:url('../images/yokohama2200.jpg');
+        filter: brightness(70%);
+        min-height:100vh;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        //box-shadow: 0 0 180px 180px black inset;
+        &-text {
+            position:absolute;
+            top:50%;
+            width:100%;
+            text-align:center;
+            color:#000;
+            font-size:27px;
+            letter-spacing:8px;
+            text-transform:uppercase;
+            &-border {
+                background-color:#111;
+                color:#fff;
+                padding:20px;
+            }
+        }
+        @media(max-width:568px){
+            background-attachment:scroll; 
+        }
+      }
+      &-screen3 {
+        position:relative;
+        background-image:url('../images/shimokita2200.jpg');
+        filter: brightness(70%);
+        min-height:100vh;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        box-shadow: 0 0 180px 180px black inset;
+        &-text {
+            position:absolute;
+            top:50%;
+            width:100%;
+            text-align:center;
+            color:#000;
+            font-size:27px;
+            letter-spacing:8px;
+            text-transform:uppercase;
+            &-border {
+                background-color:#111;
+                color:#fff;
+                padding:20px;
+            }
+        }
+        @media(max-width:568px){
+            background-attachment:scroll; 
+        }
+      }
+      &-section {
+        text-align:center;
+        padding:50px 0;
+        min-height: 100vh;
+        background-color:transparent;
+        color:#f1f1f1;
+        font-family: Raleway;
+        &-content {
+          display: flex;
+          justify-content: space-around;
+          &-heading {
+            margin: 30px 0;
+            text-transform: uppercase;
+            border-bottom: 1px solid;
+          }
+          &-tech {
+            width: 40%;
+            &-icons {
+              justify-items: center;
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+              grid-template-rows: auto;
+              gap: 40px;
+              margin: 100px auto;
+              font-family: Rubik;
+              &-icon {
+                width: 60px;
+                & img {
+                  max-width: 100%;
+                  height: auto;
+                }
+              }
+              @media(max-width: 400px) {
+                gap: 30px;
+                // margin: 10px auto;
+              }
+            }
+            @media(max-width: 1000px) {
+              width: 100%;
+            }      
+          }
+          &-work {
+            width: 40%;
+            &-project {
+              margin: 100px auto;
+            }
+            & a {
+              text-decoration: none;
+              color: #f1f1f1;
+              &:hover {
+                color: salmon;
+              }
+            }
+            @media(max-width: 1000px) {
+              width: 100%;
+            }
+          }
+          @media(max-width: 1000px) {
+            flex-direction: column;
+          }
+        }
+        &-links {
+          font-family: Raleway;
+          display: flex;
+          justify-content: space-around;
+          & h2 {
+            font-weight: 200;
+          }
+          &-card {
+            & a {
+              text-decoration: none;
+              color: white;
+              &:hover {
+                color: salmon;
+              }
+            }
+          }
+        }
+        &-about-title {
+          text-transform: uppercase;
+          margin: 50px 0;
+        }
+        &-body {
+          &-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 80px;
+            &-img {
+              width: 300px;
+              & img {
+                border-radius: 50%;
+              }
+            }
+            &-info {
+              margin: 0 40px;
+              & h2 {
+                font-weight: 200;
+              }
+            }
+            @media(max-width: 850px) {
+              flex-direction: column;
+            }
+          }
+        }
+        @media(max-width: 1000px) {
+          padding:50px 30px;
+        }
+      }
+  }
+  
+
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+
+  .form-style-9{
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 5px solid lightgray;
+  }
+  .form-style-9 ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+  }
+  .form-style-9 ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+  }
+  .form-style-9 ul li  .field-style{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+  
+  }.form-style-9 ul li  .field-style:focus{
+    box-shadow: 0 0 5px #B0CFE0;
+    border:1px solid #B0CFE0;
+  }
+  .form-style-9 ul li .field-split{
+    width: 49%;
+  }
+  .form-style-9 ul li .field-full{
+    width: 100%;
+  }
+  .form-style-9 ul li input.align-left{
+    float:left;
+  }
+  .form-style-9 ul li input.align-right{
+    float:right;
+  }
+  .form-style-9 ul li textarea{
+    width: 100%;
+    height: 100px;
+  }
+  .form-style-9 ul li input[type="button"], 
+  .form-style-9 ul li button[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+  }
+  .form-style-9 ul li input[type="button"]:hover, 
+  .form-style-9 ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+  }
+  .form-style-9 ul li button[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+  }

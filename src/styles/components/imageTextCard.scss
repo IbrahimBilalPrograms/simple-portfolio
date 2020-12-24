@@ -1,0 +1,15 @@
+.imagetextcard {
+    padding: 0 30px;
+    opacity: .95;
+    font-family: Raleway;
+    &-title {
+        @media(max-width: 600px) {
+            font-size: 8vw;
+        }
+    }
+    &-description {
+        @media(max-width: 600px) {
+            font-size: 5vw;
+        }
+    }
+}
